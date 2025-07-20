@@ -1,0 +1,34 @@
+.share-distribution-card {
+    /* Remove white outline */
+    border: none; /* Ensure no border */
+    /* Match styles with funding history card */
+    background-color: #f0f0f0; /* Match background color */
+    box-shadow: none; /* Remove shadow */
+    border-radius: 8px; /* Example: match border radius */
+    padding: 16px; /* Ensure padding matches */
+    /* Add any other styles to match the funding history card */
+}
+
+/* Ensure content styles match */
+.content {
+    padding: 16px; /* Ensure padding matches */
+    border: none; /* Remove any border from content */
+    outline: none; /* Remove any outline from content */
+    /* Add any other styles to match the funding history card */
+}
+
+/* Additional styles to ensure no outline or unwanted effects */
+.share-distribution-card:focus {
+    outline: none; /* Remove focus outline if applicable */
+}
+
+/* Remove outlines from all direct children */
+.content > * {
+    border: none; /* Remove borders from all direct children */
+    outline: none; /* Remove outlines from all direct children */
+}
+
+/* If there are specific elements that might have outlines, add this rule */
+.content * {
+    outline: none; /* Remove outlines from all nested elements */
+} 
