@@ -54,15 +54,15 @@ export function ShareDistributionChart({ stakeholders }: { stakeholders: Stakeho
   }));
 
   return (
-    <div className="h-[300px] flex justify-start">
-      <ResponsiveContainer width="80%" height="100%">
+    <div className="h-[300px] flex  items-start  justify-start">
+      <ResponsiveContainer className={'w-full h-full'} >
         <BarChart
           data={dataWithPercent}
           layout="vertical"
-          margin={{ top: 20, right: 30, left: 40, bottom: 20 }}
+          margin={{ top: 20, right: 40, left: 10, bottom: 20 }}
         >
           <XAxis type="number" allowDecimals={false} />
-          <YAxis dataKey="type" type="category" width={100} />
+          <YAxis dataKey="type" type="category" className='text-[0.8899rem]'  width={60}/>
           <Tooltip formatter={(value: number, name: string, props: any) => [`${value} shares (${props.payload.percent}%)`, 'Shares']} />
           <Legend />
           <Bar dataKey="shares" name="Shares" isAnimationActive fill="#8884d8">

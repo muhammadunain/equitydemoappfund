@@ -60,6 +60,7 @@ const ShareDistributionCard = ({ data }) => {
             <div className="content">
                 {/* Remove the Share Distribution heading if it exists */}
                 {/* <h2>Share Distribution</h2> */}
+                {/* @ts-ignore */}
                 <Pie data={chartData} options={options} />
             </div>
         </div>
